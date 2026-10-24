@@ -1,17 +1,36 @@
 {
   "name": "@orkid-labs/react-utils",
   "version": "0.1.0",
-  "description": "React utility functions for formatting, class merging, and common operations",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "description": "React utility functions — formatting, class merging, and shared component helpers",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
   "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "react",
     "utils",
     "formatting",
-    "tailwind"
+    "tailwind",
+    "utilities",
+    "classnames",
+    "tailwind-merge",
+    "typescript",
+    "orkid-labs"
   ],
   "author": "Orkid Labs",
   "license": "MIT",
@@ -19,11 +38,15 @@
     "type": "git",
     "url": "https://github.com/orkid-labs/react-utils.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "clsx": "^2.0.0",
     "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "tsup": "^9.0.0",
+    "typescript": "^5.9.3"
   }
 }

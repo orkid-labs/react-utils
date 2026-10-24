@@ -43,3 +43,18 @@ getTimeAgo(Date.now() - 3600000) // "1h ago"
 ## License
 
 MIT
+
+---
+
+## Part of Orkid Labs
+
+**react-utils** — React utility functions — formatting, class merging, and common component helpers.
+
+- Install: `npm install @orkid-labs/react-utils`
+- Package: https://www.npmjs.com/package/@orkid-labs/react-utils
+- API docs: https://docs.orkidlabs.xyz/packages/react-utils
+- Docs: https://docs.orkidlabs.xyz/packages/react-utils
+
+Related Orkid projects: [@orkid-labs/widget](https://github.com/orkid-labs/widget), [analytics-utils](https://github.com/orkid-labs/analytics-utils)
+
+Orkid Labs builds gasless, MEV-protected swap routing and agent-native DeFi infrastructure — [orkidlabs.xyz](https://orkidlabs.xyz) · [@orkid-labs on npm](https://www.npmjs.com/org/orkid-labs) · [github.com/orkid-labs](https://github.com/orkid-labs)
